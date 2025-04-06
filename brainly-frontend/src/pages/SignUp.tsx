@@ -9,7 +9,7 @@ export function SignUp() {
 
     const usernameRef = useRef<HTMLInputElement>();
     const passwordRef = useRef<HTMLInputElement>();
-    const navigate=useNavigate();
+    const navigate = useNavigate();
 
     async function signup() {
         const username = usernameRef.current?.value;

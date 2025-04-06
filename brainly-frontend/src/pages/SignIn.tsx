@@ -9,24 +9,21 @@ export function SignIn() {
 
     const usernameRef = useRef<HTMLInputElement>();
     const passwordRef = useRef<HTMLInputElement>();
-    const navigate=useNavigate();
+    const navigate = useNavigate();
 
     async function signin() {
         const username = usernameRef.current?.value;
         const password = passwordRef.current?.value;
 
-        const response=await axios.post(BACKEND_URL + "/api/v1/signin", {
+        const response = await axios.post(BACKEND_URL + "/api/v1/signin", {
             username,
             password
         })
-        const jwt=response.data.token;
-        localStorage.setItem("token",jwt);
+        const jwt = response.data.token;
+        localStorage.setItem("token", jwt);
         // redirect the user to the dashboard
         navigate("/dashboard");
-
     }
-
-
 
     return <div className="h-screen w-screen bg-gray-200 flex justify-center items-center">
 
@@ -35,7 +32,7 @@ export function SignIn() {
             <Input reference={passwordRef} placeholder="Password" />
 
             <div className="flex justify-center pt-4">
-                <Button variant="primary" text="SignIn" fullWidth={true} loading={false} onClick={signin}/> 
+                <Button variant="primary" text="SignIn" fullWidth={true} loading={false} onClick={signin} />
                 {/* this loading is hard-coded should make it user responsive */}
             </div>
 

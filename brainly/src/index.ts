@@ -58,9 +58,11 @@ app.post("/api/v1/signin", async (req, res) => {
     }
 })
 app.post("/api/v1/content", UserMW, async (req, res) => {
-    const { link, title } = req.body;
+    const link=req.body.link;
+    const type=req.body.type;
     await contentmodel.create({
-        link, title,
+        link, type,
+        title:req.body.title,
         //@ts-ignore
         userId: req.userId,
         tags: []

@@ -14,8 +14,8 @@ const variantClasses = {
 };
 const defaultStyles = "px-4 py-2 rounded-md font-normal flex";
 
-export function Button({ variant, text, startIcon, onClick,fullWidth,loading }: ButtonProps) {
-    return <button onClick={onClick} className={variantClasses[variant] + " " + defaultStyles + (fullWidth ? " w-full flex items-center justify-center":"")+ (loading?" opacity-45":"") } disabled={loading}>
+export function Button({ variant, text, startIcon, onClick, fullWidth, loading }: ButtonProps) {
+    return <button onClick={onClick} className={variantClasses[variant] + " " + defaultStyles + (fullWidth ? " w-full flex items-center justify-center" : "") + (loading ? " opacity-45" : "")} disabled={loading}>
         {startIcon && <span className="flex items-center pr-2">{startIcon}</span>}
         <span>{text}</span>
     </button>
