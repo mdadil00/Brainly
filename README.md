@@ -1,6 +1,7 @@
 # Brainly
 
-Brainly is a web-app that helps you **save, organize, and visualize your important links, documents, tweets, videos, and more** — all within a clean and customizable dashboard. You can call it as your second brain
+Brainly is a web-app that helps you **save, organize, and visualize your important links, documents, tweets, videos, and more** — all with a responsive interface. You can call it as your second brain.
+(It is a basic MERN stack project with a potential to reform into a fully fledged personal tool by integrating with ML and searching capabilities)
 
 
 ---
@@ -14,7 +15,7 @@ Brainly is a web-app that helps you **save, organize, and visualize your importa
 
 ##  Features
 
-- 🔐 **Authentication System** – Secure login system using React state and route protection.
+- 🔐 **Authentication System** – Signup and Signin endpoints using React state and route protection.
 - 🧠 **Dashboard View** – View your saved links, tweets, YouTube videos, and text-based entries in an aesthetic tile-based grid.
 - ➕ **Add Content** – Add multiple content types with support for YouTube links, tweet embeds, and custom notes.
 - 🧭 **Sidebar Navigation** – Filter content by platform (Twitter, YouTube, etc.).
@@ -38,6 +39,4 @@ Brainly is a web-app that helps you **save, organize, and visualize your importa
 - **Zod** or **Yup** (for input validation)
 
 ---
-
-## 📁 Project Structure
 
