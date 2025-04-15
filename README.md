@@ -7,8 +7,8 @@ Brainly is a web-app that helps you **save, organize, and visualize your importa
 
 ## 📸 Preview
 
-![Signin Page](./screenshots/signin.png)
-![Dashboard](./screenshots/dashboard.png)
+![Image](https://github.com/user-attachments/assets/044b80aa-2c8f-4f9a-9d55-c6465ac56b78)
+![Image](https://github.com/user-attachments/assets/3507cf33-625e-46ca-bdd2-3e4d04b52020)
 
 ---
 
